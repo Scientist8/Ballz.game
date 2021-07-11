@@ -15,10 +15,5 @@ public class BallReturn : MonoBehaviour
     {
         ballLauncher.ReturnBall();
         collision.collider.gameObject.SetActive(false);
-
-        if (tag == "Block")
-        {
-            SceneManager.LoadScene("EndScene");
-        }
     }
 }
